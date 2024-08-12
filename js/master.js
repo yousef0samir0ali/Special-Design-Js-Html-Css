@@ -20,10 +20,7 @@ document.querySelector(".toggle-setting .fa").onclick = function () {
 const colorList = document.querySelectorAll(".colors-list li");
 colorList.forEach((li) => {
   li.addEventListener("click", (e) => {
-    document.documentElement.style.setProperty(
-      "--main-color",
-      e.target.dataset.color
-    );
+    document.documentElement.style.setProperty("--main-color", e.target.dataset.color);
     localStorage.setItem("colors-option", e.target.dataset.color);
     handleActive(e);
   });
@@ -31,12 +28,7 @@ colorList.forEach((li) => {
 
 // Change Background Image And Save Random Backgrounds In LocalStorage
 let landingPage = document.querySelector(".landing-page");
-let imageArray = [
-  "../images/01.jpg",
-  "../images/02.jpg",
-  "../images/03.jpg",
-  "../images/04.jpg",
-];
+let imageArray = ["01.jpg", "02.jpg", "03.jpg", "04.jpg"];
 let optionInterval = true;
 let mainInterval;
 let localInterval = localStorage.getItem("local-intervla");
@@ -55,8 +47,8 @@ if (localInterval !== null) {
 function interval() {
   mainInterval = setInterval(() => {
     let randomNumber = Math.floor(Math.random() * imageArray.length);
-    landingPage.style.backgroundImage =
-      'url("' + imageArray[randomNumber] + '")';
+    landingPage.style.backgroundImage = `url(images/${imageArray[randomNumber]})`;
+    // 'url(images/"' + imageArray[randomNumber] + '")'
   }, 1000);
 }
 if (optionInterval === true) {
@@ -90,9 +82,7 @@ window.onscroll = function () {
 
   if (windowScrollTop > skillOffsetTop - 300) {
     // windowScrollTop > skillOffsetTop + skillOuterHeight - windowHeight;
-    let allSkills = document.querySelectorAll(
-      ".skill-box .skill-progress span"
-    );
+    let allSkills = document.querySelectorAll(".skill-box .skill-progress span");
     allSkills.forEach((prog) => {
       prog.style.width = prog.dataset.progress;
     });
@@ -160,9 +150,7 @@ function handleActive(event) {
 }
 
 //Show Or Hide Bullet Nav
-let bullesControl = document.querySelectorAll(
-  ".option-box .bullets-option button"
-);
+let bullesControl = document.querySelectorAll(".option-box .bullets-option button");
 
 bullesControl.forEach((bull) => {
   bull.addEventListener("click", (e) => {
@@ -183,14 +171,10 @@ if (localBullet !== null) {
   });
   if (localBullet === "block") {
     document.querySelector(".nav-bullets").style.display = "block";
-    document
-      .querySelector(".option-box .bullets-option button.yes")
-      .classList.add("active");
+    document.querySelector(".option-box .bullets-option button.yes").classList.add("active");
   } else {
     document.querySelector(".nav-bullets").style.display = "none";
-    document
-      .querySelector(".option-box .bullets-option button.no")
-      .classList.add("active");
+    document.querySelector(".option-box .bullets-option button.no").classList.add("active");
   }
 }
 
