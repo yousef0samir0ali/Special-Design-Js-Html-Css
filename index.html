@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Special Design</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/master.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+</head>
+
+<body>
+  <!-- Start Setting Box  -->
+  <div class="setting-box">
+    <div class="toggle-setting">
+      <i class="fa fa-gear"></i>
+    </div>
+    <div class="setting-container">
+      <div class="option-box">
+        <h4>Change Colors:</h4>
+        <ul class="colors-list">
+          <li class="active" data-color="#ff9800"></li>
+          <li data-color="green"></li>
+          <li data-color="#FFEB3B"></li>
+          <li data-color="blue"></li>
+          <li data-color="red"></li>
+        </ul>
+      </div>
+      <div class="option-box">
+        <h4>Random Backgrounds:</h4>
+        <div class="random-background">
+          <button class="yes active" data-control="yes">Yes</button>
+          <button class="no" data-control="no">No</button>
+        </div>
+      </div>
+      <div class="option-box">
+        <h4>Show Bullets Nav:</h4>
+        <div class="bullets-option">
+          <button class="yes active" data-display="yes">Yes</button>
+          <button class="no" data-display="no">No</button>
+        </div>
+      </div>
+      <button class="reset-option">Reset Option</button>
+    </div>
+  </div>
+  <!-- End Setting Box  -->
+
+  <!-- Start Nav Bullets  -->
+  <div class="nav-bullets">
+    <div class="bullet" data-section=".about-us">
+      <div class="tolltip">About Us</div>
+    </div>
+    <div class="bullet" data-section=".skills">
+      <div class="tolltip">Our Skills</div>
+    </div>
+    <div class="bullet" data-section=".gallery">
+      <div class="tolltip">Our Gallery</div>
+    </div>
+    <div class="bullet" data-section=".timeline">
+      <div class="tolltip">Timeline</div>
+    </div>
+    <div class="bullet" data-section=".featuers">
+      <div class="tolltip">Features</div>
+    </div>
+    <div class="bullet" data-section=".ts">
+      <div class="tolltip">Testimonials</div>
+    </div>
+  </div>
+
+  <!-- End Nav Bullets  -->
+  <!-- Start Landing Page  -->
+  <div class="landing-page">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="header-area">
+        <div class="logo">Special Design</div>
+
+        <div class="links-container">
+          <ul class="links">
+            <li>
+              <a href="#" class="active" data-section=".about-us">About</a>
+            </li>
+            <li><a href="#" data-section=".skills">Skills</a></li>
+            <li><a href="#" data-section=".gallery">Gallery</a></li>
+            <li><a href="#" data-section=".timeline">TimeLine</a></li>
+            <li><a href="#" data-section=".featuers">Features</a></li>
+            <li><a href="#" data-section=".ts">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+    <div class="introduction-text">
+      <h1>We Are <span>Creative Agency</span></h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+        sed, dolorem, sequi modi a tenetur recusandae
+      </p>
+    </div>
+  </div>
+  <!-- End Landing Page  -->
+  <!-- Start About Us  -->
+  <div class="container">
+    <div class="about-us" id="aboutus">
+      <div class="info-box">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+          ratione expedita, minima distinctio deleniti libero voluptatem
+          voluptatum officia necessitatibus in sint quisquam molestias at
+          molestiae omnis nobis corporis eveniet numquam.
+        </p>
+      </div>
+      <div class="image-box">
+        <img src="images/illustration.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+  <!-- End About Us  -->
+  <!-- Start Skills  -->
+  <div class="skills">
+    <div class="container">
+      <h2>Our Skills</h2>
+      <div class="skill-box">
+        <div class="skill-name">HTML</div>
+        <div class="skill-progress">
+          <span data-progress="90%"></span>
+        </div>
+      </div>
+      <div class="skill-box">
+        <div class="skill-name">CSS</div>
+        <div class="skill-progress">
+          <span data-progress="80%"></span>
+        </div>
+      </div>
+      <div class="skill-box">
+        <div class="skill-name">Java Script</div>
+        <div class="skill-progress">
+          <span data-progress="75%"></span>
+        </div>
+      </div>
+      <div class="skill-box">
+        <div class="skill-name">React</div>
+        <div class="skill-progress">
+          <span data-progress="65%"></span>
+        </div>
+      </div>
+      <div class="skill-box">
+        <div class="skill-name">SQL</div>
+        <div class="skill-progress">
+          <span data-progress="70%"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Skills  -->
+  <!-- Start Our Gallery  -->
+  <div class="container">
+    <div class="gallery">
+      <h2>Our Gallery</h2>
+      <div class="images-box">
+        <img src="images/01.jpg" alt="Image One" />
+        <img src="images/02.jpg" alt="Image Tow" />
+        <img src="images/03.jpg" alt="Image Three" />
+        <img src="images/04.jpg" alt="Image Four" />
+        <img src="images/05.jpg" alt="Image Five" />
+        <img src="images/06.jpg" alt="Image Sex" />
+        <img src="images/07.jpg" alt="" />
+        <img src="images/08.jpg" alt="" />
+        <img src="images/09.jpg" alt="" />
+        <img src="images/010.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+  <!-- End Our Gallery  -->
+  <!-- Start TimeLine  -->
+  <div class="timeline">
+    <div class="container">
+      <div class="timeline-content">
+        <div class="year">2020</div>
+        <div class="left">
+          <div class="content">
+            <h3>Testing Heading</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Tempora rem distinctio natus veniam, blanditiis placeat mollitia
+              cum consectetur sed. Quos, voluptatum magni. Quaerat nam
+              corrupti voluptas accusamus. Nulla, aliquid sapiente.
+            </p>
+          </div>
+        </div>
+        <div class="clear-float"></div>
+        <div class="right">
+          <div class="content">
+            <h3>Testing Heading</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Tempora rem distinctio natus veniam, blanditiis placeat mollitia
+              cum consectetur sed. Quos, voluptatum magni. Quaerat nam
+              corrupti voluptas accusamus. Nulla, aliquid sapiente.
+            </p>
+          </div>
+        </div>
+        <div class="clear-float"></div>
+        <div class="year">2018</div>
+        <div class="left">
+          <div class="content">
+            <h3>Testing Heading</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Tempora rem distinctio natus veniam, blanditiis placeat mollitia
+              cum consectetur sed. Quos, voluptatum magni. Quaerat nam
+              corrupti voluptas accusamus. Nulla, aliquid sapiente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End TimeLine  -->
+  <!-- Start Our Featuers  -->
+  <div class="featuers">
+    <div class="container">
+      <h2>Our Featuers</h2>
+      <div class="feat-box">
+        <img src="images/Icon_01.png" alt="" />
+        <h4>Development</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At neque
+          beatae dolore perferendis consequatur laboriosam,
+        </p>
+      </div>
+      <div class="feat-box">
+        <img src="images/Icon_02.png" alt="" />
+        <h4>Development</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At neque
+          beatae dolore perferendis consequatur laboriosam,
+        </p>
+      </div>
+      <div class="feat-box">
+        <img src="images/Icon_03.png" alt="" />
+        <h4>Development</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At neque
+          beatae dolore perferendis consequatur laboriosam,
+        </p>
+      </div>
+      <div class="feat-box">
+        <img src="images/Icon_04.png" alt="" />
+        <h4>Development</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At neque
+          beatae dolore perferendis consequatur laboriosam,
+        </p>
+      </div>
+      <div class="feat-box">
+        <img src="images/Icon_05.png" alt="" />
+        <h4>Development</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At neque
+          beatae dolore perferendis consequatur laboriosam,
+        </p>
+      </div>
+      <div class="feat-box">
+        <img src="images/Icon_06.png" alt="" />
+        <h4>Development</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At neque
+          beatae dolore perferendis consequatur laboriosam,
+        </p>
+      </div>
+      <div class="clear-float"></div>
+    </div>
+  </div>
+  <!-- End Our Featuers  -->
+  <!-- Start Testimonials -->
+  <div class="ts">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="ts-box">
+        <p>
+          Product Description Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. At neque beatae dolore perferendis consequatur
+          laboriosam,
+        </p>
+        <div class="person-info">
+          <img src="https://placehold.co/80x80/orange/white" alt="" />
+          <h4>Yousef Ali</h4>
+          <p>CEO At Company</p>
+        </div>
+      </div>
+      <div class="ts-box">
+        <p>
+          Product Description Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. At neque beatae dolore perferendis consequatur
+          laboriosam,
+        </p>
+        <div class="person-info">
+          <img src="https://placehold.co/80x80/000000/FFF" alt="" />
+          <h4>Samer Hasan</h4>
+          <p>CEO At Company</p>
+        </div>
+      </div>
+      <div class="ts-box">
+        <p>
+          Product Description Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. At neque beatae dolore perferendis consequatur
+          laboriosam,
+        </p>
+        <div class="person-info">
+          <img src="https://placehold.co/80x80/orange/white" alt="" />
+          <h4>Muhammad Ibrahim</h4>
+          <p>CEO At Company</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Testimonials -->
+
+  <!-- Start Contact Us  -->
+  <div class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="">
+        <div class="left">
+          <input type="text" placeholder="Your Name" name="username" />
+          <input type="text" placeholder="Your Phone" name="phone" />
+          <input type="email" placeholder="Your Email" name="email" />
+          <input type="text" placeholder="Supject" name="subject" />
+        </div>
+        <div class="right">
+          <textarea name="message" placeholder="Your Message"></textarea>
+          <input type="submit" value="Send" />
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- End Contact Us  -->
+
+  <!-- Start Footer  -->
+  <div class="footer">
+    Greated By <span>Eng.Youef Ali</span>
+  </div>
+  <!-- End Footer  -->
+  <!-- <i class="fa-solid fa-bars"></i>
+    <i class="fa fa-times fa-2x" aria-hidden="true"></i> -->
+  <script src="js/master.js"></script>
+</body>
+
+</html>
